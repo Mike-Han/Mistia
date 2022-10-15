@@ -49,14 +49,6 @@ module.exports = configure(function (/* ctx */) {
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#build
     build: {
       vitePlugins: [
-        [
-          require('Vue'),
-          {
-            include: [/\.vue$/],
-            reactivityTransform: true,
-          },
-        ],
-
         // https://github.com/antfu/unplugin-auto-import
         [
           require('unplugin-auto-import/vite'),
